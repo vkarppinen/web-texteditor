@@ -1,0 +1,86 @@
+/**********************************
+ *
+ * Stylesheet for wysiwyg editor.
+ * © Valtteri Karppinen, 18.2.2016
+ *
+ **********************************/
+
+/* When content is editable remove the default outline and add a inset shadow. */ 
+div[contenteditable="true"] {
+	outline: none;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.85);
+}
+
+/*
+ * Editor's content area.
+ */
+#editor-content {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.25);
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*
+ * Editor's toolbar
+ */
+#editor #editor-toolbar {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+}
+#editor-toolbar fieldset {
+	display: inline;
+	border: none;
+	border-right: 1px solid rgba(0,0,0,1);
+	border-top: 1px solid rgba(0,0,0,1);
+	margin: 0;
+	padding: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#editor-toolbar fieldset:first-child {
+	padding-left: 0px;
+}
+#editor-toolbar fieldset:last-child {
+	position: relative;
+	top: 9px;
+	border-right: none;
+}
+#editor-toolbar fieldset div {
+	display: flex;
+}
+#editor-toolbar fieldset legend {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#editor-toolbar fieldset div button, #editor-toolbar fieldset div select  {
+	display: inline-block;
+	margin: 5px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 3px;
+}
+#editor #editor-toolbar button.tool {
+	background-color: transparent;
+	min-width: 30px;
+	height:30px;
+	border: 1px solid rgba(0,0,0,0.25);
+}
+#editor #editor-toolbar button.tool:active {
+	box-shadow: inset 1px 1px 5px black;
+}
+.active-tool {
+	box-shadow: inset 1px 1px 5px black;
+}
+.edit {
+	background-color: #99cc33!important;
+}
+.view {
+	background-color: red!important;
+}

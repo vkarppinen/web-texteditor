@@ -24,9 +24,9 @@ A very simple text editor written in javascript. See this [live demo](http://use
     editor.initialize();
   ```
  
- 
-### Upcoming updates
-  
-  
+### TODOS
+- [ ] Add tool to clear formatting of a block.
+
+
 #### Problems
 - Some issues inserting ul and ol. If block is formatted as a paragraph, the newly created ul or ol will be created inside the paragraph block.

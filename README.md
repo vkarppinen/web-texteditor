@@ -30,3 +30,4 @@ A very simple text editor written in javascript. See this [live demo](http://use
 
 #### Problems
 - Some issues inserting ul and ol. If block is formatted as a paragraph, the newly created ul or ol will be created inside the paragraph block.
+- Issues on font styling. When paragraph is bolded etc. the paragraph tool isn't active.

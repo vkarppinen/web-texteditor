@@ -7,7 +7,7 @@ A very simple text editor written in javascript. See this [live demo](http://use
 
 1. Reference the editor.js and editor.css files in your html template.
    
-2. For using the text-editor in a page the HTML template should be organised as follows:
+2. For using the text-editor in a HTML page, the template should be organised as follows:
   - The editor will be initialised within the #editor -element. (should be a div element)
   - The content that is edited will be within the #editor-content -element. (div preferred also)
   ```html
